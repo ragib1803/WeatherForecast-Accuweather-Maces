@@ -25,7 +25,7 @@
 <?php
 function getWeather() {
   $locationKey = '28143'; // Location code for Dhaka
-  $apiKey = 'e6WqADCvrnxHiReEq1puTo9b1nVZYMTZ'; // Your AccuWeather API key
+  $apiKey = 'e6WqADCvrnxHiReEq1puTo9b1nVZYMTZ';
   $apiUrl = "http://dataservice.accuweather.com/forecasts/v1/daily/5day/$locationKey?apikey=$apiKey&metric=true";
 
   $response = file_get_contents($apiUrl);
